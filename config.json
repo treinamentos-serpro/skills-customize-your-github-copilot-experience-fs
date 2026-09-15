@@ -72,6 +72,20 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "consuming-rest-apis-javascript",
+      "title": "Consuming REST APIs with JavaScript",
+      "description": "Consume FastAPI REST endpoints with native JavaScript, fetch, JSON, DOM updates, and error handling.",
+      "path": "assignments/consuming-rest-apis-javascript",
+      "dueDate": "2026-09-22",
+      "attachments": [
+        {
+          "name": "Starter HTML",
+          "file": "starter-code.html",
+          "type": "html"
+        }
+      ]
     }
   ]
 }

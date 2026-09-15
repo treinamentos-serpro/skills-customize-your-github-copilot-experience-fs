@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Dashboard</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        margin: 2rem auto;
+        max-width: 42rem;
+        padding: 0 1rem;
+      }
+
+      form {
+        display: grid;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+
+      input,
+      button {
+        font: inherit;
+        padding: 0.5rem;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+      }
+
+      .status {
+        min-height: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Task Dashboard</h1>
+
+      <form id="task-form">
+        <label for="title">Task title</label>
+        <input id="title" name="title" required />
+
+        <label>
+          <input id="completed" name="completed" type="checkbox" />
+          Completed
+        </label>
+
+        <button id="submit-button" type="submit">Add task</button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite"></p>
+      <ul id="task-list"></ul>
+    </main>
+
+    <script>
+      const apiUrl = "http://localhost:8000/tasks";
+      const taskForm = document.querySelector("#task-form");
+      const titleInput = document.querySelector("#title");
+      const completedInput = document.querySelector("#completed");
+      const submitButton = document.querySelector("#submit-button");
+      const statusMessage = document.querySelector("#status");
+      const taskList = document.querySelector("#task-list");
+
+      async function loadTasks() {
+        // Fetch the tasks and render them in taskList.
+      }
+
+      taskForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        // Send titleInput.value and completedInput.checked to the API.
+      });
+
+      loadTasks();
+    </script>
+  </body>
+</html>
